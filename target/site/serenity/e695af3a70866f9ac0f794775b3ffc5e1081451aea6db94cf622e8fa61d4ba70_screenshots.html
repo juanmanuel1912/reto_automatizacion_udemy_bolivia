@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo project usingSerenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="ead96ae27f275d9400317b93d48b2a9cccf989491b0b2b400823490ffd042812.html">Form Of Dates</a></span>
+                > <span class="truncate-60"><a
+                    href="e695af3a70866f9ac0f794775b3ffc5e1081451aea6db94cf622e8fa61d4ba70.html">Registered succelfully to the user </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 29-06-2022 16:14</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Form Of Dates </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                The user could going to the website utest and make his register for the option button join today
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="ff1312023d39bfe017bf1cfa7eee688f5343ffeb07241e1c0d6e56a450ede02c.html">
+                                    (Scenario)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Registered succelfully to the user
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: no such element: Unable to locate element: {'method':'xpath','selector':'//*[@id='manContent']/div/div/div[1]/div/h1'}</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>retoautomateTren.stepdefinitions.BookingTrenStepDefinitions.theRegisterIsSuccelfull(ComunityUtestStepDefinitions.java:40)<br />✽.The register is succelfull(src/test/resources/features/ComunityUtest.feature:13)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource1734299419970612481.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="a290c12df042923d520ff1e509d733d0a90e18f8b59e3bde7db7a36edb4cd616.png" title=" Given the user could going to the option join today" width="1600"/>
+                <img src="a290c12df042923d520ff1e509d733d0a90e18f8b59e3bde7db7a36edb4cd616.png" title=" Juan open up" width="1600"/>
+                <img src="a290c12df042923d520ff1e509d733d0a90e18f8b59e3bde7db7a36edb4cd616.png" title=" juan opens the Comunity utest page" width="1600"/>
+                <img src="a290c12df042923d520ff1e509d733d0a90e18f8b59e3bde7db7a36edb4cd616.png" title=" juan clicks on Join Today" width="1600"/>
+                <img src="8a744439570ca60f6b1eb38ae521d885103ae725cf2ba7d9ac137dfd16865af1.png" title=" juan clicks on Join Today (completed)" width="1600"/>
+                <img src="8a744439570ca60f6b1eb38ae521d885103ae725cf2ba7d9ac137dfd16865af1.png" title=" Juan open up (completed)" width="1600"/>
+                <img src="8a744439570ca60f6b1eb38ae521d885103ae725cf2ba7d9ac137dfd16865af1.png" title=" Given the user could going to the option join today (completed)" width="1600"/>
+                <img src="eaba639e29b90458dedb07e9a894cade17be3c3a564829f675becfb9de49e469.png" title=" When the user could complete all de dates on the form of register
+| firstName | lastName | email | birthMonth | birthDay | birthYear | city | zipCode | country | yourComputer | version | language | yourMovilDevice | yourModel | operatingSystem | password |
+| Jose | Rizco | joseepr1913@gmail.com | December | 10 | 1986 | Trujillo | 13007 | peru | Windows | 8.1 64-bit | English | Apple | iPad 2 3G | iOS 11.2.5 | prueba123*@JM |" width="1600"/>
+                <img src="eaba639e29b90458dedb07e9a894cade17be3c3a564829f675becfb9de49e469.png" title=" Juan first step" width="1600"/>
+                <img src="50bb522748659238d3b26e9d852ca9eafe2ef626b7780a8d268b0094d0d05ddf.png" title=" juan enters 'Jose' into first name" width="1600"/>
+                <img src="d6bcbba26a1809f6949a79213aa5842283638ae9c8fc728d67c430cdac264d7b.png" title=" juan enters 'Jose' into first name (completed)" width="1600"/>
+                <img src="d6bcbba26a1809f6949a79213aa5842283638ae9c8fc728d67c430cdac264d7b.png" title=" juan enters 'Rizco' into last name" width="1600"/>
+                <img src="822a7e8bb48f397da1b8ae14ddf8ac725a69e74bc4a1ba770f1b84cdecfbd6a8.png" title=" juan enters 'Rizco' into last name (completed)" width="1600"/>
+                <img src="822a7e8bb48f397da1b8ae14ddf8ac725a69e74bc4a1ba770f1b84cdecfbd6a8.png" title=" juan enters 'joseepr1913@gmail.com' into email" width="1600"/>
+                <img src="0c0392aa6647c8c098fc91c88869d38e54cdc8c133267534d9ec64e71ad90587.png" title=" juan enters 'joseepr1913@gmail.com' into email (completed)" width="1600"/>
+                <img src="0c0392aa6647c8c098fc91c88869d38e54cdc8c133267534d9ec64e71ad90587.png" title=" juan select December on birth month" width="1600"/>
+                <img src="13f0ec516ae6d9b52a7c2fe01b6f72c784b613a3b1d6316ca3ed90d9e7170d41.png" title=" juan select December on birth month (completed)" width="1600"/>
+                <img src="13f0ec516ae6d9b52a7c2fe01b6f72c784b613a3b1d6316ca3ed90d9e7170d41.png" title=" juan select 10 on birth day" width="1600"/>
+                <img src="5983a6888cd1fd485594f279f2cac3463c9cc1b7fff20eed3f2600fb801672de.png" title=" juan select 10 on birth day (completed)" width="1600"/>
+                <img src="5983a6888cd1fd485594f279f2cac3463c9cc1b7fff20eed3f2600fb801672de.png" title=" juan select 1986 on birth year" width="1600"/>
+                <img src="1ff48cb13e61e593da8a48397274cc0ac50bdf8102502c653dc98a43d6599da4.png" title=" juan select 1986 on birth year (completed)" width="1600"/>
+                <img src="1ff48cb13e61e593da8a48397274cc0ac50bdf8102502c653dc98a43d6599da4.png" title=" juan clicks on Button next" width="1600"/>
+                <img src="b338712bbfc21a7df16c661bcac9059dd28143c186b628e6024239df3406fb02.png" title=" juan clicks on Button next (completed)" width="1600"/>
+                <img src="b338712bbfc21a7df16c661bcac9059dd28143c186b628e6024239df3406fb02.png" title=" Juan first step (completed)" width="1600"/>
+                <img src="b338712bbfc21a7df16c661bcac9059dd28143c186b628e6024239df3406fb02.png" title=" Juan secondt step" width="1600"/>
+                <img src="4599592e04676de20c7aca5249c401ad0e4f3027eb8773ef8a878e39402d2844.png" title=" juan clicks on City" width="0"/>
+                <img src="07383bf0a6d215c1f64701527749b5c16d98f38e9402e52fe48fac968e1fd264.png" title=" juan clicks on City (completed)" width="1600"/>
+                <img src="07383bf0a6d215c1f64701527749b5c16d98f38e9402e52fe48fac968e1fd264.png" title=" juan clears field City" width="1600"/>
+                <img src="a369334eb99657575e3ea428ea05d6ba54445774596617676cda1619b2c4d127.png" title=" juan clears field City (completed)" width="1600"/>
+                <img src="a369334eb99657575e3ea428ea05d6ba54445774596617676cda1619b2c4d127.png" title=" juan enters 'Trujillo' into City" width="1600"/>
+                <img src="6aff056717bbf789f8bfb45e5033ee11722d55c9c82e245ad27fa44eed546c63.png" title=" juan enters 'Trujillo' into City (completed)" width="1600"/>
+                <img src="6aff056717bbf789f8bfb45e5033ee11722d55c9c82e245ad27fa44eed546c63.png" title=" juan enters ARROW_DOWN into City" width="1600"/>
+                <img src="f1fb54d9b92612c74c69f5de3e1837d5c5e8a9e8ad07e5ad9c2f833381d85995.png" title=" juan enters ARROW_DOWN into City (completed)" width="1600"/>
+                <img src="f1fb54d9b92612c74c69f5de3e1837d5c5e8a9e8ad07e5ad9c2f833381d85995.png" title=" juan enters ENTER into City" width="1600"/>
+                <img src="3f53d57bce1bd4e921c7601cb2688a2fdc6a038d1eff9d31939f0673d718a6cf.png" title=" juan enters ENTER into City (completed)" width="1600"/>
+                <img src="3f53d57bce1bd4e921c7601cb2688a2fdc6a038d1eff9d31939f0673d718a6cf.png" title=" juan enters '13007' into zip code" width="1600"/>
+                <img src="7f072c222c085c8cda1056f301654962f9553e49c1170775262ee807e910cefc.png" title=" juan enters '13007' into zip code (completed)" width="1600"/>
+                <img src="7f072c222c085c8cda1056f301654962f9553e49c1170775262ee807e910cefc.png" title=" juan clicks on Country" width="1600"/>
+                <img src="1dd6f6f1bc31183963727d7be7b31e9eed728219155969d8a0c1af2ec97a1a7f.png" title=" juan clicks on Country (completed)" width="1600"/>
+                <img src="1dd6f6f1bc31183963727d7be7b31e9eed728219155969d8a0c1af2ec97a1a7f.png" title=" juan enters 'peru' into text country" width="1600"/>
+                <img src="2a2616fc9768ad72e81756ffb1edb3031b18df20447ff47739593d9c391b890b.png" title=" juan enters 'peru' into text country (completed)" width="1600"/>
+                <img src="2a2616fc9768ad72e81756ffb1edb3031b18df20447ff47739593d9c391b890b.png" title=" juan enters ENTER into text country" width="1600"/>
+                <img src="66d5a04f798a550f39668c7af42c3193f0328b4aca6d831fdcea1a5f8d04f00b.png" title=" juan enters ENTER into text country (completed)" width="1600"/>
+                <img src="66d5a04f798a550f39668c7af42c3193f0328b4aca6d831fdcea1a5f8d04f00b.png" title=" juan clicks on button third step" width="1600"/>
+                <img src="054ccb4f9feb5d046a0b6d8bdf69946eeb61bb03d2ed4f2bc468c0e4adfd1b5d.png" title=" juan clicks on button third step (completed)" width="1600"/>
+                <img src="054ccb4f9feb5d046a0b6d8bdf69946eeb61bb03d2ed4f2bc468c0e4adfd1b5d.png" title=" Juan secondt step (completed)" width="1600"/>
+                <img src="054ccb4f9feb5d046a0b6d8bdf69946eeb61bb03d2ed4f2bc468c0e4adfd1b5d.png" title=" Juan thirdt step" width="1600"/>
+                <img src="054ccb4f9feb5d046a0b6d8bdf69946eeb61bb03d2ed4f2bc468c0e4adfd1b5d.png" title=" juan clicks on list your computer" width="1600"/>
+                <img src="16f41ca7b4f08018551e83838ef4b4fcb64aca33122a62e7dbe64c1f131cf777.png" title=" juan clicks on list your computer (completed)" width="1600"/>
+                <img src="16f41ca7b4f08018551e83838ef4b4fcb64aca33122a62e7dbe64c1f131cf777.png" title=" juan enters 'Windows' into text your computer" width="1600"/>
+                <img src="4437096b31e6eb6b1b3ec1c1994e6d49810201c714a5384f76d42b424e99c834.png" title=" juan enters 'Windows' into text your computer (completed)" width="1600"/>
+                <img src="4437096b31e6eb6b1b3ec1c1994e6d49810201c714a5384f76d42b424e99c834.png" title=" juan enters ENTER into text your computer" width="1600"/>
+                <img src="212e9ea24a24ea24a8fab802b068fef37bd24bc3015a4b509f8c9d91243829bd.png" title=" juan enters ENTER into text your computer (completed)" width="1600"/>
+                <img src="212e9ea24a24ea24a8fab802b068fef37bd24bc3015a4b509f8c9d91243829bd.png" title=" juan clicks on Version" width="1600"/>
+                <img src="4bd97110c491cdd96771bdc8600cf088a83cd561e021a579a51a90037e3e8e31.png" title=" juan clicks on Version (completed)" width="1600"/>
+                <img src="4bd97110c491cdd96771bdc8600cf088a83cd561e021a579a51a90037e3e8e31.png" title=" juan enters '8.1 64-bit' into Version" width="1600"/>
+                <img src="70f32f03022178038d13b9f344ff51d1c913b44a38e39c5e94eaf67d2a8352bf.png" title=" juan enters '8.1 64-bit' into Version (completed)" width="1600"/>
+                <img src="70f32f03022178038d13b9f344ff51d1c913b44a38e39c5e94eaf67d2a8352bf.png" title=" juan enters ENTER into Version" width="1600"/>
+                <img src="575d059041ad423d8f4942d56b92fe63fde30f1829b2734d1912e5106db937a3.png" title=" juan enters ENTER into Version (completed)" width="1600"/>
+                <img src="575d059041ad423d8f4942d56b92fe63fde30f1829b2734d1912e5106db937a3.png" title=" juan clicks on Language" width="1600"/>
+                <img src="fd32da52f7c37a159e591b63f6c792c0989c8217633c63b06431a24475b87327.png" title=" juan clicks on Language (completed)" width="0"/>
+                <img src="fd32da52f7c37a159e591b63f6c792c0989c8217633c63b06431a24475b87327.png" title=" juan enters 'English' into Language" width="0"/>
+                <img src="07926e73a238f2860c9158b9b8eeed3b6db56bca71d18a308adb519d15128530.png" title=" juan enters 'English' into Language (completed)" width="1600"/>
+                <img src="07926e73a238f2860c9158b9b8eeed3b6db56bca71d18a308adb519d15128530.png" title=" juan enters ENTER into Language" width="1600"/>
+                <img src="3cdbe963ed880d624d4829dc2487a02840429648b098642f98989dcc48589258.png" title=" juan enters ENTER into Language (completed)" width="1600"/>
+                <img src="3cdbe963ed880d624d4829dc2487a02840429648b098642f98989dcc48589258.png" title=" juan clicks on your movil device" width="1600"/>
+                <img src="d185396cfbc487a173c84aae4bb38f2438934b9fc5717fd054ceb7b0d56ae44a.png" title=" juan clicks on your movil device (completed)" width="1600"/>
+                <img src="d185396cfbc487a173c84aae4bb38f2438934b9fc5717fd054ceb7b0d56ae44a.png" title=" juan enters 'Apple' into your movil device" width="1600"/>
+                <img src="19a8cffc711c6c1e2a7a3bdab11f31a79e25fdc3f75aa138ed1ff8daaa979b4e.png" title=" juan enters 'Apple' into your movil device (completed)" width="1600"/>
+                <img src="19a8cffc711c6c1e2a7a3bdab11f31a79e25fdc3f75aa138ed1ff8daaa979b4e.png" title=" juan enters ENTER into your movil device" width="1600"/>
+                <img src="3b9e7180752da1da6ed8596ed3504607ccfbd250ffdfcc5a621a635dd7860705.png" title=" juan enters ENTER into your movil device (completed)" width="1600"/>
+                <img src="3b9e7180752da1da6ed8596ed3504607ccfbd250ffdfcc5a621a635dd7860705.png" title=" juan clicks on your model" width="1600"/>
+                <img src="1586cc4a8bed6aa175a3e01884436a370c59a52592dcfe603974ceafe67d24fa.png" title=" juan clicks on your model (completed)" width="1600"/>
+                <img src="1586cc4a8bed6aa175a3e01884436a370c59a52592dcfe603974ceafe67d24fa.png" title=" juan enters 'iPad 2 3G' into your model" width="1600"/>
+                <img src="3305b33ca3f96b8289d4b7df9817b9a5724160f4f2d0bf7c8fc54a44db5c0692.png" title=" juan enters 'iPad 2 3G' into your model (completed)" width="0"/>
+                <img src="3305b33ca3f96b8289d4b7df9817b9a5724160f4f2d0bf7c8fc54a44db5c0692.png" title=" juan enters ENTER into your model" width="0"/>
+                <img src="27a050f09fa90495ba50b54c758365aacb1a51125a94f25d5f4da176f2b727d7.png" title=" juan enters ENTER into your model (completed)" width="1600"/>
+                <img src="27a050f09fa90495ba50b54c758365aacb1a51125a94f25d5f4da176f2b727d7.png" title=" juan clicks on operation system" width="1600"/>
+                <img src="8b435f32304686ae1448bb3905c90df36f3bfa3977a796a4dd054646f5203f6e.png" title=" juan clicks on operation system (completed)" width="1600"/>
+                <img src="8b435f32304686ae1448bb3905c90df36f3bfa3977a796a4dd054646f5203f6e.png" title=" juan enters 'iOS 11.2.5' into operation system" width="1600"/>
+                <img src="062c3edf06ea698b1cc20ff72fefe548d3f8053748a9e2da74166a9718711d8c.png" title=" juan enters 'iOS 11.2.5' into operation system (completed)" width="1600"/>
+                <img src="062c3edf06ea698b1cc20ff72fefe548d3f8053748a9e2da74166a9718711d8c.png" title=" juan enters ENTER into operation system" width="1600"/>
+                <img src="db6150b88a78df2d39adeda220ae9f35ccb3a203f8b1f37c25ae9e4359b94e00.png" title=" juan enters ENTER into operation system (completed)" width="1600"/>
+                <img src="db6150b88a78df2d39adeda220ae9f35ccb3a203f8b1f37c25ae9e4359b94e00.png" title=" juan clicks on Button last step" width="1600"/>
+                <img src="fc796fbd931ca484aa50931de2476fcaf2b81c9c1ebec25160ca18bd2faa22e2.png" title=" juan clicks on Button last step (completed)" width="1600"/>
+                <img src="fc796fbd931ca484aa50931de2476fcaf2b81c9c1ebec25160ca18bd2faa22e2.png" title=" Juan thirdt step (completed)" width="1600"/>
+                <img src="fc796fbd931ca484aa50931de2476fcaf2b81c9c1ebec25160ca18bd2faa22e2.png" title=" Juan fourtt step" width="1600"/>
+                <img src="6f6f74f06aa7e78ed0a8eef0a64e0f1475a716fe7ea6240fb104638a96905798.png" title=" juan enters 'prueba123*@JM' into password" width="1600"/>
+                <img src="2294de75208b1ba706e5d107a4b6651b76f421f201e3b0deac2fe62bac1196e0.png" title=" juan enters 'prueba123*@JM' into password (completed)" width="1600"/>
+                <img src="2294de75208b1ba706e5d107a4b6651b76f421f201e3b0deac2fe62bac1196e0.png" title=" juan enters 'prueba123*@JM' into confirm password" width="1600"/>
+                <img src="5890e1ef69ded34490513e9829df12265920db5aeedc6e4db043cd2622ed8ad9.png" title=" juan enters 'prueba123*@JM' into confirm password (completed)" width="1600"/>
+                <img src="5890e1ef69ded34490513e9829df12265920db5aeedc6e4db043cd2622ed8ad9.png" title=" juan clicks on Term of use" width="1600"/>
+                <img src="166bd1cb2d98b0842175d0f7e675d5a3e37d40958bb3643822c9880e1b84efb0.png" title=" juan clicks on Term of use (completed)" width="1600"/>
+                <img src="166bd1cb2d98b0842175d0f7e675d5a3e37d40958bb3643822c9880e1b84efb0.png" title=" juan clicks on privacy setting" width="1600"/>
+                <img src="d2f1e62d0427a9a5bbf3d3b19609aa585df36dad993889ad99f9c04c5249a876.png" title=" juan clicks on privacy setting (completed)" width="1600"/>
+                <img src="d2f1e62d0427a9a5bbf3d3b19609aa585df36dad993889ad99f9c04c5249a876.png" title=" juan clicks on button register" width="1600"/>
+                <img src="ef172722422e4e1357daf950598c7bd4a339085dfffe5014c00c057300a8bae2.png" title=" juan clicks on button register (completed)" width="1600"/>
+                <img src="ef172722422e4e1357daf950598c7bd4a339085dfffe5014c00c057300a8bae2.png" title=" Juan fourtt step (completed)" width="1600"/>
+                <img src="ef172722422e4e1357daf950598c7bd4a339085dfffe5014c00c057300a8bae2.png" title=" When the user could complete all de dates on the form of register
+| firstName | lastName | email | birthMonth | birthDay | birthYear | city | zipCode | country | yourComputer | version | language | yourMovilDevice | yourModel | operatingSystem | password |
+| Jose | Rizco | joseepr1913@gmail.com | December | 10 | 1986 | Trujillo | 13007 | peru | Windows | 8.1 64-bit | English | Apple | iPad 2 3G | iOS 11.2.5 | prueba123*@JM | (completed)" width="1600"/>
+                <img src="ef172722422e4e1357daf950598c7bd4a339085dfffe5014c00c057300a8bae2.png" title=" Then The register is succelfull
+| textCompleteRegister |
+| Welcome to the world&acute;s largest community of freelance software testers. |" width="1600"/>
+                <img src="82a9d10b5679189c112e69b132c5cb171309e001426572949f0677b7bb730b16.png" title=" Then the title" width="1600"/>
+                <img src="96e16f59c2a96d0ad5b59009051f53bc13e0bd037c16c04fd9a84ee756f65f7a.png" title=" Then the title (completed): <span class='error-color'>ERROR</span>" width="1600"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.82</span>
+</div>
+</body>
+</html>

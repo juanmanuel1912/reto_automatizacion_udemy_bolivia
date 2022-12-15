@@ -1,0 +1,1811 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="viewport" content="initial-scale=1">
+
+	<title>PERURAIL - Machu Picchu awaits for you!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:image" content="https://www.perurail.com/wp-content/uploads/2019/08/miniatura-redes.jpg">
+<meta property="og:description" content="Book your train tickets to Machu Picchu. Information about schedules, train stations and trains to Cusco, Puno and Arequipa.">
+    <!-- CSS -->
+    <link href="/ecommerce/www/css/jquery-ui.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/ecommerce/www/css/bx-slider.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/ecommerce/www/css/jquery.scrollbar.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/ecommerce/www/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"><link href="/ecommerce/www/css/shadowbox.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/ecommerce/www/css/typography.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/ecommerce/www/css/main.css?v=1657256869" media="screen" rel="stylesheet" type="text/css">
+<link href="/ecommerce/www/css/jquery-ui.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/ecommerce/www/css/bx-slider.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/ecommerce/www/css/jquery.scrollbar.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/ecommerce/www/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">    <!-- /.CSS -->
+
+    <!-- Google Tag Manager -->
+    <script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script async="" src="https://www.clarity.ms/eus2-e/s/0.6.34/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/uet/134621220"></script><script async="" src="https://www.clarity.ms/tag/9fyn27ucmh?ref=gtm2"></script><script src="https://connect.facebook.net/signals/config/220375522610602?v=2.9.64&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://bat.bing.com/bat.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W8WG5M"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W8WG5M');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <!-- Jquery -->
+    <script type="text/javascript" src="/ecommerce/www/js/jquery/jquery-1.11.1.min.js"></script>
+    <!-- /.Jquery -->
+
+    <script type="text/javascript">
+        var basePath = '/ecommerce/www';
+    </script>
+
+    <!-- other javascript libraries -->
+    <script type="text/javascript" src="/ecommerce/www/js/jquery/conditionizr.min.js"></script>
+<script type="text/javascript" src="/ecommerce/www/js/jquery/jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript" src="/ecommerce/www/js/tag-manager.js"></script>
+<script type="text/javascript" src="/ecommerce/www/js/jquery/jquery.blockUI-2.70.0.js"></script>
+<script type="text/javascript" src="/ecommerce/www/js/jquery/shadowbox.js"></script>
+<script type="text/javascript" src="/ecommerce/www/js/main.js?v=1657256869"></script>
+<script type="text/javascript" src="/ecommerce/www/js/general.js?v=1657256869"></script>
+<script type="text/javascript" src="/ecommerce/www/js/calendario/index.php?formato=DMY"></script>
+<script type="text/javascript">
+    //<!--
+    
+calendario_fecha_inicio  = '20220708';
+calendario_fecha_termino = '20231231';
+$.listaCabezeraSalida =  'DEPARTURE';
+$.listaCabezeraLlegada = 'ARRIVAL';
+$.listaCabezeraSalidaBimodal =  'DEPARTURE (BUS)';
+$.listaCabezeraSalidaBimodalRegreso =  'DEPARTURE (TRAIN)';
+$.listaCabezeraTransbordoBimodal =  'TRANSFER (BUS TO TRAIN)';
+$.listaCabezeraTransbordoBimodalRegreso =  'TRANSFER (TRAIN TO BUS)';
+$.listaCabezeraLlegadaBimodal = 'ARRIVAL (TRAIN)';
+$.listaCabezeraLlegadaBimodalRegreso = 'ARRIVAL (BUS)';
+$.price =  'price (Per Person)';
+$.schedule = 'schedule';
+$.nomColumnaPrecio       = 'PRICE PER PERSON ';
+$.numCupoMaximoVenta     = '9';
+$.tarifaRegular               = 'REGULAR RATE';
+$.tarifaCorto            = 'REGULAR';
+$.tarifaPromoCorto       = 'PROMO';
+$.PromoTitViajaA       = 'Travel to';
+$.PromoTitEn       = 'by';
+$.PromoVerTerminos       = 'See terms and conditions';
+
+$.alertaCambioParametrosBusqueda = 'Is performing a new search, the cart will clear, you want to continue with your search ?';
+$.jsSeleccioneItinerario = 'Please, select a departure and/or return itinerary.';    
+$.noEncontroViaje        = 'No availability for these dates, please select an alternative date or route <br />Please change your search dates on the left and start your search again. ';
+$.seleccioneDestino      = 'Select route';
+$.seleccionarViajeIdaYRetorno = 'Select your journey.';
+$.seleccionarViajeIda         = 'seleccionarViajeIda';
+$.ninosConInfantesMensaje     = 'De viajar con dos infantes y adicionalmente niños, los niños deberán ser acompañados por un segundo adulto responsable.';
+$.noDisponible                = 'Sold Out';
+
+// Promotion messages
+$.msgAddPromotionToCart = 'Promotion added to cart.';
+$.msgRemovePromotionFromCart = 'Promotion removed from cart';
+$.msgEnterPromotionConsumptionDate = 'Enter the promotion consumption date.';
+$.msgEnterPromotionQuantity = 'Select quantity.';
+$.msgEnterPromotionQuantityLessThanPassengers = 'Select a quantity less than or equal to the number of passengers.';
+$.msgPromotionWithoutStock = 'Sorry, stock was exhausted for this promotion.'
+
+$.idRuta = '46';
+$.fechaActualViajeReservar = '08/07/2022';
+$.aNomEstacionLlegada = [];
+$.aNomEstacionSalida = [];
+$.idsDeRutaConPromocion = [43,12,61];
+$.busqueda = {
+    idViajeTipo: 'RT',
+    idDestino: '2',
+    idRuta: 46,
+    fecViajeIda: '08/07/2022',
+    fecViajeRegreso: '08/07/2022',
+    numCupoAdulto: 2,
+    numCupoNino: 0,
+    numCupoInfanteConAsiento: 0,
+    numCupoInfanteSinAsiento: 0,
+    indFlexibilidadFechas: '1',
+    indBuscadorInfantes: '0',
+	idSesion: '6f9ff263591464538903cd4e87ba5cff',
+	service: 'ALL'
+};
+$.itinerarioIda = null;          
+$.itinerarioRetorno = null;
+$.step = 2;
+
+
+$.cabeceraColumna1='TRAIN' ;
+$.cabeceraColumna2='DEPARTURE' ;
+$.cabeceraColumna3='ARRIVAL' ;
+$.cabeceraColumna4='REGULAR RATE (USD)<br>(PER PERSON)' ;
+$.cabeceraColumna5='PROMO RATE<br>(PER PERSON)' ;
+$.cabeceraColumna6='TRANSFER (BUS TO TRAIN)' ;
+$.cabeceraColumna7='ARRIVAL (TRAIN)' ;
+
+
+
+    //-->
+</script>    <!-- /.other javascript libraries -->
+
+    <!-- template generator - Mustache -->
+    <script type="text/javascript" src="/ecommerce/www/js/mustache.min.js"></script>
+    <!-- /.template generator - Mustache -->
+
+    <!-- global javascript variables -->
+    <script type="text/javascript">
+        $.language = 'en';
+        $.cms_url = 'https://pax4.perurail.com';
+        $.idSesion = '6f9ff263591464538903cd4e87ba5cff';
+        $.noRealizoExito = 'Your order cannot be done, please try again later';
+        $.cargando = 'Loading...';
+        $.cantidadPasajerosMensaje = 'You can only purchase tickets for up to 9 passengers.';
+        $.numAdicionalCupoInfantes = '1';
+        $.mensajeErrorInfantes = 'Si viajan dos Infantes con un adulto responsable, uno de los Infantes, por motivos de seguridad, necesitará un asiento adicional, por el cual se pagará 50% del precio del pasaje.\nEl adulto responsable deberá contar con una silla especial para viaje de bebé, a fin de colocarla en el asiento que corresponda al segundo Infante.';
+        $.mensajeSesionExpirada = 'Your session has expired, please realize a new search.';
+
+        // Varianles globales para Calendario
+        calendario_mes[0] = 'JANUARY';
+        calendario_mes[1] = 'FEBRUARY';
+        calendario_mes[2] = 'MARCH';
+        calendario_mes[3] = 'APRIL';
+        calendario_mes[4] = 'MAY';
+        calendario_mes[5] = 'JUNE';
+        calendario_mes[6] = 'JULY';
+        calendario_mes[7] = 'AUGUST';
+        calendario_mes[8] = 'SEPTEMBER';
+        calendario_mes[9] = 'OCTOBER';
+        calendario_mes[10] = 'NOVEMBER';
+        calendario_mes[11] = 'DECEMBER';
+        calendario_dia[0] = 'MO';
+        calendario_dia[1] = 'TU';
+        calendario_dia[2] = 'WE';
+        calendario_dia[3] = 'TH';
+        calendario_dia[4] = 'FR';
+        calendario_dia[5] = 'SA';
+        calendario_dia[6] = 'SU';
+        $.desFormatoFecha = 'd/m/Y';
+    </script>
+    <!-- /.global javascript variables -->
+
+    <!--[if lt IE 9]>
+    <script src="/js/min/html5shiv.min.js"></script>
+    <![endif]-->
+<meta http-equiv="origin-trial" content="A9wkrvp9y21k30U9lU7MJMjBj4USjLrGwV+Z8zO3J3ZBH139DOnCv3XLK2Ii40S94HG1SZ/Zeg2GSHOD3wlWngYAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://bat.bing.com/p/action/134621220.js" type="text/javascript" async="" data-ueto="ueto_ec02849aa6"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1006994885/?random=1657256872369&amp;cv=9&amp;fst=1657256872369&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=900&amp;u_w=1600&amp;u_ah=860&amp;u_aw=1600&amp;u_cd=24&amp;u_his=4&amp;u_tz=-300&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=2&amp;gtm=2wg6t0&amp;sendb=1&amp;ig=1&amp;data=travel_destid%3DMachu%20Picchu%20%3E%20Ollantaytambo%3Btravel_originid%3D2022-07-08%20%2F%200%3Btravel_startdate%3D2022-07-08%3Btravel_enddate%3D2022-07-08%3Btravel_pagetype%3Dofferdetail&amp;frm=0&amp;url=https%3A%2F%2Fpax3.perurail.com%2Fecommerce%2Fwww%2Ftrains%2Fseleccionar%2F&amp;ref=https%3A%2F%2Fpax3.perurail.com%2Fecommerce%2Fwww%2F%3Fidioma%3Den&amp;tiba=PERURAIL%20-%20Machu%20Picchu%20awaits%20for%20you!&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></head>
+
+<!-- class for belmond -->
+<body class="" style="">
+<!-- Google Tag Manager (noscript) -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8WG5M"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<iframe height="0" width="0" style="display: none; visibility: hidden;" src="//11714337.fls.doubleclick.net/activityi;src=11714337;type=rmkt-0;cat=rmktn0;ord=2871981016544;gtm=2wg6t0;auiddc=836727368.1657256862;u1=https%3A%2F%2Fpax3.perurail.com%2Fecommerce%2Fwww%2Ftrains%2Fseleccionar%2F;~oref=https%3A%2F%2Fpax3.perurail.com%2Fecommerce%2Fwww%2Ftrains%2Fseleccionar%2F?"></iframe><section id="wrapper">
+    <header>
+        <article id="lang">
+            <a href="" class="carrito-menu" style="border: 2px solid #000; border-radius: 10px; color:#535353">
+                <img class="icon-car" src="/ecommerce/www/img/carrito4.png">
+                <img class="icon-car icon-car-belmont" src="/ecommerce/www/img/carrito3.png">
+								Shopping Cart
+												
+            </a>
+                            |
+                <span>
+                        en                    <div class="logo-tren-normal">
+                          <img src="/ecommerce/www/img/flecha3.png">
+                        </div>
+                        <div class="logo-belmont">
+                          <img src="/ecommerce/www/img/flecha3.png">
+                        </div>
+                    </span>
+                
+                                    <a href="/ecommerce/www/?idioma=es" class="none" style="top:49px">es</a>
+                    <br>
+                                                        <a href="/ecommerce/www/?idioma=en" class="none" style="top:66px">en</a>
+                    <br>
+                                                        </article>
+        <article id="logo">
+            <div class="logo-tren-normal">
+                <a href="/ecommerce/www/">
+                    <img src="/ecommerce/www/img/perurail-logo.png">
+                </a>
+            </div>
+            <div class="logo-belmont">
+                <a href="/ecommerce/www/">
+                    <img src="/ecommerce/www/img/perurail-logo.png">
+                </a>
+            </div>
+        </article>
+    </header>
+
+    <!-- content -->
+    
+
+
+<section id="compra" style="right: 0px;display: block;"><a href="#" click="1">    <!--<a href="#" click="1">-->
+        <div class="logo-tren-normal">
+            <img src="/ecommerce/www/img/carrito.png">Purchase Summary        </div>
+        <div class="logo-belmont">
+            <img src="/ecommerce/www/img/carrito3.png">Purchase Summary        </div>
+    </a>
+    <div id="shopping_cart_div">
+
+    </div>
+</section>
+<section id="content">
+    <input type="hidden" id="inUpsellingIda" value="N">
+    <input type="hidden" id="inUpsellingRet" value="N">
+    <article class="pasos">
+        
+        <div>
+                        <span>1</span>
+            <div id="text_menu_1">SEARCH</div>
+                    </div>
+                    <div class="espacio"><hr></div>
+                
+        <div class="active">
+            <a href="/trains/seleccionar">            <span>2</span>
+            <div id="text_menu_2">TRAINS</div>
+            </a>        </div>
+                    <div class="espacio"><hr></div>
+                
+        <div>
+                        <span>3</span>
+            <div id="text_menu_3">PASSENGERS DATA</div>
+                    </div>
+                    <div class="espacio"><hr></div>
+                
+        <div class="last">
+                        <span>4</span>
+            <div id="text_menu_4">CONFIRMATION AND PAYMENT</div>
+                    </div>
+            </article>
+    <!--- TRIP SEARCH FORM -->
+    <div class="modificar-busqueda">
+    <h2>
+        <a href="">
+            Modify Search            <img src="/ecommerce/www/img/flecha-modifica.png">
+        </a>
+    </h2>
+    <div class="content-modificar-busqueda">
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded" id="formTrenBuscar">
+            <div class="center">
+                <div>
+                    <label for="busquedaRegreso-1" class="tipo-vuelo">
+                        <input checked="" type="radio" class="required digit" value="RT" id="busquedaRegreso-1" name="idViajeTipo">
+                        <span id="text_round_trip">Round trip</span>
+                    </label>&nbsp;
+                    <label for="busquedaRegreso-0">
+                        <input type="radio" class="required digit" value="OW" id="busquedaRegreso-0" name="idViajeTipo">
+                        <span id="text_one_way">One way</span>
+                    </label>
+                </div>
+                <div>
+                    <div class="row-label">
+                        <label class="required" for="idDestino" id="text_destination">Destination (City)</label>
+                        <select class="required digit destino" id="idDestino" name="idDestino" onchange="getRoutes(this.value)">
+                                                                                    <option value="1">Machu Picchu</option>
+                                                                                    <option value="2" selected="">Ollantaytambo</option>
+                                                                                    <option value="3">Cusco</option>
+                                                                                    <option value="4">Puno</option>
+                                                    </select>
+                    </div>
+
+                    <div class="row-label">
+                        <label class="required fecha-ida" for="fecViajeIda" id="text_departure">Departure</label>
+                        <input type="text" class="required calendar fecha-ida" readonly="1" value="08/07/2022" id="fecViajeIda" name="fecViajeIda" onclick="js_calendario_mostrar('fecViajeIda', 'fecViajeIdaCalendario');">
+                        <span style="float:right;" id="fecViajeIdaCalendario"></span>
+                    </div>
+
+                    <div class="row-label marginLeft">
+                        <label class="required" for="fecViajeRegreso" id="text_return">Return</label>
+                        <input type="text" class="required fecha-retorno calendar" readonly="1" value="08/07/2022" id="fecViajeRegreso" name="fecViajeRegreso" onclick="js_calendario_mostrar('fecViajeRegreso', 'fecViajeRegresoCalendario', 'fecViajeIda');">
+                        <span id="fecViajeRegresoCalendario" style="float:right"></span>
+                    </div>
+                </div>
+                <div class="right">
+                    <label class="checkbox">
+                        <input type="checkbox" name="indFlexibilidadFechas" id="indFlexibilidadFechas" class="flexible" checked="" value="1">
+                        Flexible dates                        <a href="#enlace1" class="text" rel="shadowbox;width=350px; height=200px;">?</a>
+                    </label>
+                </div>
+                <div id="enlace1" class="none-text">
+                    <div class="content-infante">
+                        <div class="title">
+                            Flexible dates                        </div>
+                        <p>
+                            txtFlexibilidadFechas                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="row-label">
+                        <label class="required ruta" for="idRuta" id="text_route">Route (Depart &gt; Arrive)</label>
+                        <select class="required digit ruta" id="idRuta" name="idRuta"><option value="">Select route</option><option selected="" value="46">Machu Picchu &gt; Ollantaytambo</option></select>
+                    </div>
+
+                    <div class="row-label">
+                        <label id="text_adults">Adults (ages 12 and over)</label>
+                        <select class="required digit adulto" id="numCupoAdulto" name="numCupoAdulto">
+                                                                                    <option value="1">
+                                1                            </option>
+                                                                                    <option value="2" selected="">
+                                2                            </option>
+                                                                                    <option value="3">
+                                3                            </option>
+                                                                                    <option value="4">
+                                4                            </option>
+                                                                                    <option value="5">
+                                5                            </option>
+                                                                                    <option value="6">
+                                6                            </option>
+                                                                                    <option value="7">
+                                7                            </option>
+                                                                                    <option value="8">
+                                8                            </option>
+                                                                                    <option value="9">
+                                9                            </option>
+                                                    </select>
+                    </div>
+
+                    <div class="row-label">
+                        <label id="text_children">Children (ages 3 to 11)</label>
+                        <select class="required digit ninos" id="numCupoNino" name="numCupoNino"><option value="0" selected="">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="clear:both">
+                        <input type="hidden" id="indValidacionPasajeros" name="indValidacionPasajeros">
+                    </div>
+                    <label class="como-infante">
+                        <a href="" class="infante" id="traveling_with_infants">
+                            Traveling with Infants (0-2)? </a>
+                        <a class="text" href="#como-infante" rel="shadowbox;width=350px; height=200px;">?</a>
+                    </label>
+                </div>
+                <div id="como-infante" class="none-text">
+                    <div class="content-infante">
+                        <div class="title" booking-id="traveling_with_infants">
+                            Traveling with Infants (0-2)?                        </div>
+                        <p id="traveling_with_infants_first_text">
+                            Son considerados Infantes, los menores de 0 a 2 años, los cuales no pagarán pasaje si durante el viaje, ocupan el asiento del adulto responsable.                        </p>
+                        <p id="traveling_with_infants_second_text">
+                            Si se desea que el Infante ocupe un asiento, se deberá pagar la tarifa especial equivalente al 50% del precio del pasaje.                        </p>
+                        <div class="enlace">
+                            <a href="">
+                                <span id="traveling_with_infants_hyperlink">
+                                    Click aquí para ver las políticas                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix combo-infante" id="tablaInfantes">
+                    <div class="select">
+                        <label id="text_infant_without_seat">Infants without seats</label>
+                        <select class="required digit" id="numCupoInfanteSinAsiento" name="numCupoInfanteSinAsiento">
+                                                                                    <option value="0" selected="">
+                                0                            </option>
+                                                                                    <option value="1">
+                                1                            </option>
+                                                                                    <option value="2">
+                                2                            </option>
+                                                                                    <option value="3">
+                                3                            </option>
+                                                                                    <option value="4">
+                                4                            </option>
+                                                                                    <option value="5">
+                                5                            </option>
+                                                                                    <option value="6">
+                                6                            </option>
+                                                                                    <option value="7">
+                                7                            </option>
+                                                                                    <option value="8">
+                                8                            </option>
+                                                    </select>
+                    </div>
+                    <div class="select">
+                        <label id="text_infant_with_seat">Infants with seat</label>
+                        <select class="required digit" id="numCupoInfanteConAsiento" name="numCupoInfanteConAsiento">
+                                                                                    <option value="0" selected="">
+                                0                            </option>
+                                                                                    <option value="1">
+                                1                            </option>
+                                                                                    <option value="2">
+                                2                            </option>
+                                                                                    <option value="3">
+                                3                            </option>
+                                                                                    <option value="4">
+                                4                            </option>
+                                                                                    <option value="5">
+                                5                            </option>
+                                                                                    <option value="6">
+                                6                            </option>
+                                                                                    <option value="7">
+                                7                            </option>
+                                                                                    <option value="8">
+                                8                            </option>
+                                                    </select>
+                    </div>
+                    <div style="clear:both">
+                        <input type="hidden" id="indBuscadorInfantes" name="indBuscadorInfantes" value="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="center clearfix">
+                <!-- Event OnClick nuevaBusquedaDeViaje() -> seleccionar.js -->
+                <input id="text_btn_search" class="btn btn-buscar" onclick="nuevaBusquedaDeViaje();" type="button" value="SEARCH">
+            </div>
+        </form>
+    </div>
+</div>    <!--- /.TRIP SEARCH FORM -->
+
+    <div class="contenido-trenes trenes">
+        <!---- ONE WAY TRIP ---->
+        <div class="viajes" id="viajeIdaCapa">
+            <div class="contenedor-servicio-viaje ida">
+                <div class="tipo-servicio" booking_id="text_regular_service" placeholder="Regular Service">Regular Service</div>
+                <div class="tipo-viaje" booking_id="text_outbound_journey" placeholder="Outbound Journey">Outbound Journey</div>
+            </div>
+            <div class="cabecera-viaje ida">
+                <div class="none">
+                    <span class="mayus" booking_id="text_departure_station" style="text-decoration: underline;" placeholder="Departure">Departure</span> :
+                    <span name="one_way_departure_station_name" class="nomEstaciones"></span>
+                </div>
+                <div class="none">
+                    <span class="mayus" booking_id="text_arrival_station" style="text-decoration: underline;" placeholder="Arrival">Arrival</span> :
+                    <span name="one_way_arrival_station_name"></span>
+                </div>
+<!--                 <a class="viewMapIDA" href="#" rel="shadowbox">
+                    <span class="mapa-normal">
+                        <img src="/ecommerce/www/img/ver-mapa.png">
+                    </span>
+                    <span class="mapa-belmont">
+                        <img src="/ecommerce/www/img/ver-mapa2.png">
+                    </span>
+                    <span booking_id="text_see_map">View Map</span>
+                </a> -->
+            </div>
+
+            <!-- DESKTOP -->
+
+            <!-- simple dates & flexible dates -->
+            <div name="div_one_way_dates" class="fechaActualizacion">
+            </div>
+            <!-- /.simple dates & flexible dates -->
+
+            <!-- trip grid -->
+            <div class="scroll-wrapper contenedor-scroll scrollbar-outer columnasViajeIda columnasJorge" style="position: relative;"><div id="viajeIda" class="contenedor-scroll scrollbar-outer columnasViajeIda columnasJorge scroll-content" style="margin-bottom: 0px; margin-right: 0px;">
+                <div class="scroll">
+                    <div class="referencia cabezeraTarifas" id="cabeceraTarifasIda">						
+                        <div booking_id="text_table_header_TRAIN" placeholder="TRAIN">TRAIN</div>
+                        <div booking_id="text_table_header_DEPARTURE" placeholder="DEPARTURE">DEPARTURE</div>
+                        <div booking_id="text_table_header_ARRIVAL" placeholder="ARRIVAL">ARRIVAL</div>
+                        <div booking_id="text_table_header_REGULAR_RATE_USD" class="tdRemover" placeholder="REGULAR RATE (USD)">REGULAR RATE (USD)</div>
+                    </div>
+                    <div class="content-viajes viaje-jorge">
+                        <div class="fila">
+                            <div style="width:100% !important">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="scroll-element scroll-x"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar" style="width: 100px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar" style="height: 100px;"></div></div></div></div>
+            <!-- /.trip grid -->
+            
+            <!-- /.DESKTOP -->
+
+            <!-- MOBILE -->
+            <div id="div_one_way_mobile" class="contenido-fecha-flexible-static">
+
+                <!-- flexible dates -->
+                <div name="div_one_way_dates_mobile" class="bx-wrapper slider-trenes-static">
+                </div>
+                <!-- /.flexible dates -->
+
+                <!-- trip grid -->
+                <div class="detalle-flexible">
+                    <div id="one_way_mobile" class="lista-tren">
+                    </div>
+                </div>
+                <!-- /.trip grid -->
+            </div>
+            <!-- /.MOBILE -->           
+
+            <!-- UPSELLING -->
+            <div id="div_one_way_upselling">
+                
+            </div>
+            <!-- /.UPSELLING -->
+        </div>
+        <!---- /.ONE WAY TRIP ---->
+        
+        <!-- ONE WAY TRIP BIMODAL -->
+        <div id="viajeIdaCapaBimodal" class="contenido-bimodal" style="display: none">
+            <div class="viajes">
+            <div class="contenedor-servicio-viaje ida">
+                    <div class="tipo-servicio" booking_id="">Bimodal Service (Bus + Train) <a href="#bimodal-TyC">*</a></div>
+                    <div class="tipo-viaje" booking_id="text_outbound_journey" placeholder="Outbound Journey">Outbound Journey</div>
+                    <div class="tipo-viaje" style="padding-top:0;">
+						<a href="#bimodal-TyC">
+                        <img id="imagenIda" style="display: none" src="/ecommerce/www/img/bus_tren_ida.png">
+						</a>
+						
+                        <img id="imagenRegreso" style="display: none" src="/ecommerce/www/img/tren_bus_regreso.png">
+						
+                    </div>
+                </div>
+                <div class="cabecera-viaje ida">
+                    <div class="none">
+                        <span class="mayus" booking_id="text_departure_station" style="text-decoration: underline;" placeholder="Departure">Departure</span> :
+                        <span class="nomEstaciones" name="one_way_departure_station_name_bi"></span>
+                    </div>
+                    <div class="none">
+                        <span class="mayus" booking_id="text_arrival_station" style="text-decoration: underline;" placeholder="Arrival">Arrival</span> :
+                        <span name="one_way_arrival_station_name_bi"></span>
+                    </div>
+<!--                     <a class="viewMapIDA" href="#" rel="shadowbox">
+                        <span class="mapa-normal">
+                            <img src="/ecommerce/www/img/ver-mapa.png">
+                        </span>
+                        <span class="mapa-belmont">
+                            <img src="/ecommerce/www/img/ver-mapa2.png">
+                        </span>
+                        <span booking_id="text_see_map">View Map</span>
+                    </a> -->
+                </div>
+             
+                <div name="div_one_way_dates" class="fechaActualizacion">
+                </div>
+        
+                <div class="scroll-wrapper contenedor-scroll scrollbar-outer columnasViajeIda" style="position: relative;"><div id="viajeIdaBimodal" class="contenedor-scroll scrollbar-outer columnasViajeIda scroll-content" style="margin-bottom: 0px; margin-right: 0px;">
+                    <div class="scroll">
+                        <div class="referencia cabezeraTarifas" id="cabeceraTarifasIdaBimodal">
+                            <div booking_id="text_table_header_TRAIN" placeholder="TRAIN">TRAIN</div>
+                            <div booking_id="text_table_header_DEPARTURE" placeholder="DEPARTURE">DEPARTURE</div>
+                            <div>TRANSFER (BUS TO TRAIN)</div>
+                            <div booking_id="text_table_header_ARRIVAL" placeholder="ARRIVAL">ARRIVAL</div>
+                            <div booking_id="text_table_header_REGULAR_RATE_USD" class="tdRemover" placeholder="REGULAR RATE (USD)">REGULAR RATE (USD)</div>							
+                        </div>
+                        <div class="content-viajes viaje-jorge">
+                            <div class="fila">
+                                <div style="width:100% !important">Loading...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="scroll-element scroll-x"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar"></div></div></div></div>
+                
+                <!-- MOBILE -->
+                <div class="contenido-fecha-flexible-static">
+                    <!-- flexible dates -->
+                    <div name="div_one_way_dates_mobile" class="bx-wrapper slider-trenes-static">
+                    </div>
+                    <!-- /.flexible dates -->
+                    
+                    <!-- trip grid -->
+                    <div class="detalle-flexible">
+                        <div id="one_way_mobile_bimodal" class="lista-tren">
+                        </div>
+                    </div>
+                    <!-- /.trip grid -->                    
+                </div>
+            </div>
+        </div>
+        <!-- /.ONE WAY TRIP BIMODAL -->
+
+        <!---- RETURN TRIP ---->
+        <div id="viajeRegresoCapa" class="viajes">
+
+            <div class="contenedor-servicio-viaje retorno">
+                <div class="tipo-servicio" booking_id="text_regular_service" placeholder="Regular Service">Regular Service</div>
+                <div class="tipo-viaje" booking_id="text_inbound_journey" placeholder="Inbound Journey">Inbound Journey</div>
+            </div>
+
+            <div class="cabecera-viaje retorno">
+                <div class="none">
+                    <span class="mayus" booking_id="text_departure_station" style="text-decoration: underline;" placeholder="Departure">Departure</span> :
+                    <span class="nomEstaciones" name="return_trip_departure_station_name"></span>
+                    <select style="display: none" name="return_trip_arrival_station_name" id="select_arrival_stations">
+                        <option value="">All</option>
+                    </select>                    
+                </div>                   
+                <div class="none">
+                    <span class="mayus" booking_id="text_arrival_station" style="text-decoration: underline;" placeholder="Arrival">Arrival</span> :
+                    <select style="display: none" name="return_trip_arrival_station_name" id="select_arrival_stations">
+                        <option value="">All</option>
+                    </select>
+                    <span name="text_inbound_journey_machu">Machu Picchu</span>
+                </div>
+<!--                 <a class="viewMapRET" href="#" rel="shadowbox">
+                    <span class="mapa-normal">
+                        <img src="/ecommerce/www/img/ver-mapa.png">
+                    </span>
+                    <span class="mapa-belmont">
+                        <img src="/ecommerce/www/img/ver-mapa2.png">
+                    </span>
+                    <span booking_id="text_see_map">View Map</span>
+                </a> -->
+            </div>
+
+            <!-- DESKTOP -->
+
+            <!-- simple dates & flexible dates -->
+            <div name="div_return_trip_dates" class="fechaActualizacion">
+            </div>
+            <!-- /.simple dates & flexible dates -->
+
+            <!-- trip grid -->
+            <div class="scroll-wrapper contenedor-scroll scrollbar-outer" style="position: relative;"><div id="viajeRegreso" class="contenedor-scroll scrollbar-outer scroll-content" style="margin-bottom: 0px; margin-right: 0px;">
+                <div class="scroll">
+                    <div class="referencia" id="cabeceraTarifasRet">
+                        <div booking_id="text_table_header_TRAIN" placeholder="TRAIN">TRAIN</div>
+                        <div booking_id="text_table_header_DEPARTURE" placeholder="DEPARTURE">DEPARTURE</div>
+                        <div booking_id="text_table_header_ARRIVAL" placeholder="ARRIVAL">ARRIVAL</div>
+                        <div booking_id="text_table_header_REGULAR_RATE_USD" class="tdRemover" placeholder="REGULAR RATE (USD)">REGULAR RATE (USD)</div>
+                    </div>
+                    <div id="divViajeRegreso" class="content-viajes viaje-jorge">
+                        <div class="fila">
+                            <div style="width:100% !important">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="scroll-element scroll-x"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar" style="width: 100px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar" style="height: 100px;"></div></div></div></div>
+            <!-- /.trip grid -->
+
+            <!-- /.DESKTOP -->
+
+            <!-- MOBILE -->
+            <div id="div_return_trip_mobile" class="contenido-fecha-flexible-static">
+
+                <!-- flexible dates -->
+                <div name="div_return_trip_dates_mobile" class="bx-wrapper slider-trenes-static">
+                </div>
+                <!-- /.flexible dates -->
+
+                <!-- trip grid -->
+                <div class="detalle-flexible">
+                    <div id="return_trip_mobile" class="lista-tren">
+                    </div>
+                </div>
+                <!-- /.trip grid -->
+            </div>
+            <!-- /.MOBILE -->
+
+            <!-- UPSELLING -->
+            <div id="div_return_trip_upselling">
+
+            </div>
+            <!-- /.UPSELLING -->
+        </div>
+        <!---- /.RETURN TRIP ---->
+
+        <!-- RETURN TRIP BIMODAL -->        
+        <div id="viajeRegresoCapaBimodal" class="contenido-bimodal" style="display: none;">
+            <div class="viajes">
+                <div class="contenedor-servicio-viaje retorno">
+                <div class="tipo-servicio" booking_id="">Bimodal Service (Bus + Train) <a href="#bimodal-TyC">*</a></div>
+                    <div class="tipo-viaje" booking_id="text_inbound_journey" placeholder="Inbound Journey">Inbound Journey</div>
+                    <div class="tipo-viaje" style="padding-top:0;">
+						<a href="#bimodal-TyC">
+                        <img id="imagenIdaRet" style="display: none" src="/ecommerce/www/img/bus_tren_ida.png">
+						</a>
+						<a href="#bimodal-TyC">
+                        <img id="imagenRegresoRet" style="display: none" src="/ecommerce/www/img/tren_bus_regreso.png">
+						</a>
+                    </div>
+                </div>
+                <div class="cabecera-viaje retorno">
+                    <div class="none">
+                        <span class="mayus" booking_id="text_departure_station" style="text-decoration: underline;" placeholder="Departure">Departure</span> :
+                        <span class="nomEstaciones" name="return_trip_departure_station_name"></span>
+                        <select style="display: none" name="return_trip_arrival_station_name" id="select_arrival_stations_bi">
+                            <option value="">All</option>
+                        </select>                        
+                    </div>                   
+                    <div class="none">
+                        <span class="mayus" booking_id="text_arrival_station" style="text-decoration: underline;" placeholder="Arrival">Arrival</span> :
+                        <select style="display: none" name="return_trip_arrival_station_name" id="select_arrival_stations_bi">
+                            <option value="">All</option>
+                        </select>
+                        <span name="text_inbound_journey_machu">Machu Picchu</span>
+                    </div>
+<!--                     <a class="viewMapRET" href="#" rel="shadowbox">
+                        <span class="mapa-normal">
+                            <img src="/ecommerce/www/img/ver-mapa.png">
+                        </span>
+                        <span class="mapa-belmont">
+                            <img src="/ecommerce/www/img/ver-mapa2.png">
+                        </span>
+                        <span booking_id="text_see_map">View Map</span>
+                    </a> -->
+                </div>
+
+                <!-- DESKTOP -->
+                
+                <!-- simple dates & flexible dates -->
+                <div name="div_return_trip_dates" class="fechaActualizacion">
+                </div>
+                <!-- /.simple dates & flexible dates -->
+
+                <!-- trip grid -->
+                <div class="scroll-wrapper contenedor-scroll scrollbar-outer" style="position: relative;"><div id="viajeRegresoBimodal" class="contenedor-scroll scrollbar-outer scroll-content" style="margin-bottom: 0px; margin-right: 0px;">
+                    <div class="scroll">
+                        <div class="referencia cabezeraTarifas" id="cabeceraTarifasRetBimodal">
+                            <div booking_id="text_table_header_TRAIN" placeholder="TRAIN">TRAIN</div>
+                            <div booking_id="text_table_header_DEPARTURE" placeholder="DEPARTURE">DEPARTURE</div>
+                            <div>TRANSFER (TRAIN TO BUS)</div>
+                            <div>ARRIVAL (BUS)</div>
+                            <div booking_id="text_table_header_REGULAR_RATE_USD" class="tdRemover" placeholder="REGULAR RATE (USD)">REGULAR RATE (USD)</div>
+                        </div>
+                        <div class="content-viajes viaje-jorge">
+                            <div class="fila">
+                                <div style="width:100% !important">Loading...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="scroll-element scroll-x"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar"></div></div></div></div>
+                <!-- /.trip grid -->
+                <!-- /.DESKTOP -->
+                
+                <!-- MOBILE -->
+                <div class="contenido-fecha-flexible-static">
+                    
+                    <!-- flexible dates -->
+                    <div name="div_return_trip_dates_mobile" class="bx-wrapper slider-trenes-static">
+                    </div>
+                    <!-- /.flexible dates -->
+                    
+                    <!-- trip grid -->
+                    <div class="detalle-flexible">
+                        <div id="return_trip_mobile_bimodal" class="lista-tren">
+                        </div>
+                    </div>
+                    <!-- /.trip grid -->                                      
+                </div>
+                <!-- MOBILE -->
+            </div>
+        </div>
+        <!-- /.RETURN TRIP BIMODAL -->
+
+
+        <!-- SERVICE TERMS -->
+        <div class="texto-trenes">
+            <div class="signo" id="signo">i</div>
+			<div id="bimodal-TyC" class="terms_bimodal" style="display: none;">
+				<div class="head-tyc">
+</div>
+<div class="body-tyc">
+<h4 align="justify">(*) PeruRail operate by our Bimodal Format (Bus + Train), a complete service that combines the journey on bus and train, departing and arriving to Cusco city center.</h4>
+
+  <ul class="ul-TyC">
+		<li align="justify" style="font-size:12px;"><strong>The PeruRail Vistadome Observatory, PeruRail Vistadome and PeruRail Expedition bimodal services</strong> include a private bus departing from Wanchaq Station (located 5 minutes away from Cusco City Center) and arriving to Ollantaytambo station. From here, passengers board the train and head to their final destination: Machu Picchu Pueblo Station. The outbound and inbound journeys (bus + train) follow the same route. For additional information regarding the service and a route map, please <a href="https://www.perurail.com/special-offers/bimodal-service/" target="_blank"><b>click here.</b></a></li>
+		<li align="justify" style="font-size:12px;"><strong>Hiram Bingham, a Belmond Train bimodal service</strong> board a private bus at Wanchaq Station, 5 minutes away from Cusco’s historic center, and arrive to Belmond Hotel. From the hotel, join the Belmond Train for the journey to Machu Picchu Station. On the return leg, passengers are dropped off at their accommodation in Cusco’s city center. For additional information regarding the service and a route map, please <a href="https://www.perurail.com/hiram-bingham-bimodal-service/" target="_blank"><b>click here.</b></a></li>
+		<li align="justify" style="font-size:12px;">Regular services departing from and arriving into Ollantaytambo or Urubamba Stations will not be affected.</li>
+  </ul>
+</div>
+			</div>
+            <div class="terms" id="term_container" style="position: relative; zoom: 1;"><p><strong>​​Seats availability are subject to change in time, we suggest to visit our site again.</strong></p>
+
+<p>&nbsp;</p>
+
+<p>Dear passenger, we accept Visa and MasterCard credit cards. You can also make your payments using PayPal as an alternative payment method. PeruRail only accepts physical credit card payment; payment of travel tickets using virtual credit cards is not supported.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>NOTE</strong></p>
+
+<ul>
+	<li>
+	<p>Prices are per person and route, general sales tax included. Consider that according to the Peruvian legislation it is mandatory to pay the general sales tax (IGV). Only accommodation costs in Belmond hotels are exempted from paying this tax, all other goods and services do applied.</p>
+	</li>
+	<li>
+	<p>All prices are in US dollars and Soles.</p>
+	</li>
+	<li>
+	<p>No tickets needed for children aged 0-2 years held in parent's arms. If an independent seat is required for the child, a 50% discount on the purchase of tickets will be applied.</p>
+	</li>
+	<li>
+	<p>Children aged 3-11 years are subject to a 50% discount on the purchase of tickets.</p>
+	</li>
+	<li>
+	<p>Passengers who choose travel aboard the Belmond Hiram Bingham service, can contact us for claims, general enquiries, requirements to change dates or seats at trains.peru@belmond.com. If you are choosing another train service, please contact us at reservasweb@perurail.com. Any change can be requested no later than 24 hours prior train departure and it will be subject to space availability.</p>
+	</li>
+	<li>
+	<p>The luggage allowed must not exceed 5 kg/11 pounds per passenger. If you require special assistance with your luggage, contact us at equipaje@perurail.com, at least 48 hours prior to your departure date. Subject to space availability.</p>
+	</li>
+	<li>
+	<p>The ticket can only be refunded no later than 24 hours before departure.</p>
+	</li>
+	<li>
+	<p><strong>We remind you that on the day of your trip you must be at the station 30 minutes before departure of the train. &nbsp;</strong></p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>RECOMMENDATION</strong></p>
+
+<p>&nbsp;</p>
+
+<p>The Citadel of Machu Picchu is located in a region bordering the jungle. In that case, we recommend the use of sunscreen, sunglasses, hats or caps and repellent both during the trip and while at the Citadel.</p>
+
+<p>Due to a new regulation for the entrance to the citadel of Machu Picchu, please note that since January 1, 2019, tickets have a determined hour of entrance:<br>
+From 6:00 am, 7:00, 8:00, 9:00, 10:00, 11:00, 12:00, 13:00 and 14:00 pm.<br>
+Tickets can only be used once a day from the chosen time. &nbsp;</p>
+</div>
+        </div>
+
+
+
+        <!-- NEXT STEP  (STEP 3) -->
+        <form id="formTrenSeleccionar" name="formTrenSeleccionar" action="/ecommerce/www/trains/seleccionar-post" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="botones clearfix">
+                <div class="botones-inner">
+                    <input class="btn  btn-continuar" type="button" onclick="enviarForm()" value="Continue">
+                    <a class="btn  btn-continuar noactive" href="/ecommerce/www/trains/buscar">Return</a>
+                </div>
+            </div>
+        </form>
+        <!-- /.NEXT STEP (STEP 3) -->
+    </div>
+
+    
+    <!-- FOOTER -->
+    <footer>
+
+    <div class="brand">
+      <img class="imgfooterlogo" src="/ecommerce/www/img/paypal.jpg">
+    </div>
+    <div class="brand">
+      <img class="imgfooterlogo" src="/ecommerce/www/img/visa.jpg">
+    </div>
+    <div class="brand">
+      <img class="imgfooterlogo" src="/ecommerce/www/img/mastercar.jpg">
+    </div>
+     <div class="brand">
+      <img class="imgfooterlogo" src="/ecommerce/www/img/safety.jpg">
+     </div>  
+	 <div class="brand">
+      <img class="imgfooterlogo_diners" src="/ecommerce/www/img/diners_logo.jpg">
+     </div>  
+        <span>This site is secured by:    <img src="/ecommerce/www/img/seal_100-40_blue.png"></span>	
+<!--Start of LiveBeep Script-->
+<script type="text/javascript">
+    (function (d, s) {
+        u = (('https:' == d.location.protocol) ? 'https://' : 'http://') + 'www.livebeep.com/eye.js?duk=iEiq79uC8HM&lang=en';
+        if ((h = d.location.href.split(/#ev!/)[1]))
+            u += '?_e=' + h;
+        else if ((r = /.*\_evV=(\w+)\b.*/).test(c = d.cookie))
+            u += '?_v=' + c.replace(r, '$1');
+        d.write(unescape('%3Cscript src="' + u + '" type="text/javascript"%3E%3C/script%3E'));
+    })(document, 'script');
+</script><script src="https://www.livebeep.com/eye.js?duk=iEiq79uC8HM&amp;lang=en" type="text/javascript"></script>
+<!--End of LiveBeep Script-->
+</footer>
+    <!-- /.FOOTER -->
+
+    <!----- TRAIN IMAGE POPUPS ----->
+    
+    <div id="train_popup" class="trenOculto">
+        <div class="content-hotel 1">
+            <img class="img-popup" src="">
+
+            <div class="descripcion-hotel">
+                <h6 id="train_popup_title">EXPEDITION</h6>
+                <div id="train_popup_overview">
+                    
+                </div>                
+            </div>
+        </div>
+    </div>
+    
+    <div id="EX-POPUP" class="trenOculto">
+        <div class="content-hotel 2">
+            <img src="/ecommerce/www/img/hotel-servicio.png">
+            <div class="descripcion-hotel">
+                <h6>EXPEDITION</h6>
+                <p>For all the adventurous travelers who seek to discover all the journey details and arrange the trip itinerary 
+                                according to their needs. The Expedition is the best alternative to go to Machu Picchu.<br> <br> The Expedition 
+                                is a service designed for the traveler´s comfort, with four passenger seats located in front of each other, so you 
+                                can share your experience, and for the faithful backpack that is always with you we offer racks placed above the 
+                                seats. Also, this train has panoramic windows, air conditioning and heating, and Andean music that creates a cheerful 
+                                atmosphere.</p>            </div>
+        </div>
+    </div>
+
+    <div id="BG-POPUP" class="trenOculto">
+        <div class="content-hotel 3">
+            <img src="/ecommerce/www/img/hotel-servicio.png">
+            <div class="descripcion-hotel">
+                <h6>HIRAM BINGHAM</h6>
+                <p>The Belmond Hiram Bingham is an exclusive and luxury train. All service included where you will enjoy a full day 
+                                of unforgettable experiences.
+                                <br>Selected the best train in the world by the readers of Condé Nast Traveller UK(2011).<br>
+                                Mentioned among the 7 best trains of the world(Magazine Condé Nast Traveller 2010).<br>Belmond Hiram Bingham 
+                                among the 10 most wonderful routes of the world(NBC).<br>
+                                Belmond Hiram Bingham wagons are distinguished by their blue and gold colors for its warm and cozy interiors 
+                                that feature elegant upholstery. This service has four wagons, two dining wagon, an observation wagon 
+                                with bar and a car, kitchen, besides being able to carry up to 84 passengers.</p>            </div>
+        </div>
+    </div>
+
+    <div id="AV-POPUP" class="trenOculto">
+        <div class="content-hotel 4">
+            <img src="/ecommerce/www/img/hotel-servicio.png">
+            <div class="descripcion-hotel">
+                <h6>VISTADOME</h6>
+                <p>The Vistadome is the ideal train for those who want to be in contact with the environment and appreciate the 
+                                wonderful journey to Machu Picchu.</p>
+                                <p>Surrounded entirely by glass and wagons with large panoramic windows offering incomparable 
+                                scenic views and innumerous opportunities to capture amazing pictures, Vistadome travelers feel 
+                                connected and part of the impressive landscape of Peru. Perurail provide travelers on board 
+                                personalized and first level service to give them an unforgettable life experience.</p>            </div>
+        </div>
+    </div>
+
+    <div id="IK" class="trenOculto">
+        <div class="content-hotel 5">
+            <img src="/ecommerce/www/img/hotel-servicio.png">
+            <div class="descripcion-hotel">
+                <h6>ANDEAN EXPLORER</h6>
+                <p>Enjoy the mysticism offered by the beautiful Peruvian Andean landscape aboard on our luxury train. 
+                                <br> <br> Riding the Andean Explorer is a unique experience, a journey between mountains and clouds, 
+                                and between mountains and highlands. Ten hour train journey, which ends at the majestic Lake Titicaca 
+                                and in whose path, the traveler will see the changing landscapes among mountains, rolling plains, 
+                                and the various weather of the area. </p>            </div>
+        </div>
+    </div>
+    <!----- /.TRAIN IMAGE POPUPS ----->
+</section>
+
+<div id="capaInfo" class="info"></div>
+<div id="div_calendario" class="calendario ui-datepicker ui-widget ui-widget-content ui-corner-all" onclick="js_calendario_flg_ocultar(true);" style="position:absolute"></div>
+
+<div class="contenido-popup-tren">
+    <div class="popup popup-tren " data-popup="popup-tren">
+        <div class="popup-top">
+            <div class="popup-inner">
+                <div class="text-popup-tren">
+                    <div class="title-tren">
+                        <div class="logo-tren">
+                            <img src="/ecommerce/www/img/pop_title.png" alt="">
+                            <hr class="separador">
+                        </div>
+                    </div>
+                    <div class="contenido-parrafo">
+                        <p>
+                            The Vistadome is the ideal train for those who want to be in contact with the environment and appreciate the wonderful journey to Machu Picchu.
+                        </p>
+                        <p>
+                            Surrounded entirely by glass and wagons with large panoramic windows offering incomparable scenic views and innumerous opportunities to capture amazing pictures, Vistadome travelers feel connected and part of the impressive landscape of Peru. Perurail provide travelers on board personalized and first level service  to give them an unforgettable life experience.
+                        </p>
+                    </div>
+                    <a class="popup-close" data-popup-close="popup-tren" href="#">x</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- GRIDS - Mustache templates -->
+<script id="mobile_grid_for_regular_template" type="text/html">
+    <div class="box-tren-movil">
+        <div class="title-tren">
+            {{ #IND_DISPONIBILIDAD }}
+            <div class="radio">
+                {{ #LISTA_TARIFAS }}
+                <input 
+                    type="radio" 
+                    name="radio_{{ IND_TRAMO }}" 
+                    idTren="{{ ID_TREN }}" 
+                    indTramo="{{ IND_TRAMO }}" 
+                    idServicio="{{ ID_SERVICIO }}" 
+                    nomServicio="{{ NOM_TREN }}" 
+                    idTarifa="{{ ID_TARIFA }}" 
+                    fecProgramacion="{{ FEC_PROGRAMACION }}" 
+                    idRuta="{{ ID_RUTA }}" 
+                    idPasajeroTipoAdulto="{{ ID_PASAJERO_TIPO_ADULTO }}" 
+                    idPasajeroTipoNino="{{ ID_PASAJERO_TIPO_NINO }}" 
+                    idPasajeroTipoInfante="{{ ID_PASAJERO_TIPO_INFANTE }}" 
+                    idPasajeroTipoInfanteSinAsiento="{{ ID_PASAJERO_TIPO_INFANTE_SIN_ASIENTO }}" 
+                    impTarifaDolarAdulto="{{ IMP_TARIFA_DOLAR_ADULTO }}" 
+                    impTarifaSolesAdulto="{{ IMP_TARIFA_SOLES_ADULTO }}" 
+                    impTarifaDolarNino="{{ IMP_TARIFA_DOLAR_NINO }}" 
+                    impTarifaSolesNino="{{ IMP_TARIFA_SOLES_NINO }}" 
+                    impTarifaDolarInfante="{{ IMP_TARIFA_DOLAR_INFANTE }}" 
+                    impTarifaSolesInfante="{{ IMP_TARIFA_SOLES_INFANTE }}"
+                {{ /LISTA_TARIFAS }}
+                    impDescripcionRuta="{{ DES_RUTA }}"
+                    numCupo="{{ NUM_CUPO_DISPONIBLE }}" 
+                    numSlot="{{ NUM_SLOT }}"
+                    horSalida ="{{ HOR_SALIDA }}"
+                    horLlegada ="{{ HOR_LLEGADA }}"
+                    tieneUpselling = "{{ TIENE_UPSELLING }}"
+
+                    {{ #IND_TREN_SELECCIONADO }} checked="true" {{ /IND_TREN_SELECCIONADO }}
+                    onchange="addTripToShoppingCartAjax('{{ ID_TREN }}', '{{ ID_RUTA }}', '{{ NUM_SLOT }}');">
+
+                
+            </div>
+            {{ /IND_DISPONIBILIDAD }}
+            <h3>{{ DES_SERVICIO }} {{ NUM_SLOT }} {{FROMTO}} </h3>
+            <div class="content-ico">
+                <span class="icono-excla" onClick="showTrainData(event, '{{ ID_SERVICIO }}')">i</span>
+            </div>
+            {{{ htmlPromoTitle }}}
+            {{{ htmlPromoOffer }}}
+        </div>
+        {{ #indTramoStatus }}
+        <div class="aNomEstacionLlegada">{{ NOM_ESTACION_LLEGADA }}</div>
+        {{ /indTramoStatus }}
+        <div class="detalle-tren">
+            <div class="title-horario-tarifa">
+                <div class="t-horario">{{ txt_schedule }}</div>
+                <div class="t-horario">{{ txt_price }}</div>
+            </div>
+
+            <div class="data-horario">
+                <div class="d-horario">
+                    {{ #PROMOCION_ESTADO }}
+                    <span class="padding-promo">{{ txt_listaCabezeraSalida }}: {{ HOR_SALIDA }} HRS.</span>
+                    {{ /PROMOCION_ESTADO }}
+                    {{ ^PROMOCION_ESTADO }}
+                    <span>{{ txt_listaCabezeraSalida }}: {{ HOR_SALIDA }} HRS.</span>
+                    {{ /PROMOCION_ESTADO }}
+                    <span>{{ txt_listaCabezeraLlegada }}: {{ HOR_LLEGADA }} HRS.</span>
+                </div>
+                <div class="d-tarifa">
+                {{ #IND_DISPONIBILIDAD }}
+                    {{ #LISTA_TARIFAS }}
+                    {{ #PROMOCION_ESTADO }}
+                        <div class="tp-titulos">
+                            <div>{{ txt_tarifaRegular }}</div>
+                            <div>{{ txt_tarifaRegularPromo }}</div>
+                            {{ #eventStatus }}
+                            <div>&nbsp;&nbsp;</div>
+                            {{ /eventStatus }}
+                        </div>
+                        <div class="tp-tarifas">
+                            <div class="importe">
+                                <span class="tarifa-anterior">USD {{ NOM_MONEDA_DOLAR_ANTERIOR }}</span>
+                                <div class="tarifa-anterior">PEN {{ NOM_MONEDA_SOLES_ANTERIOR }}</div>
+                            </div>
+                            <div class="importe">
+                                <span class="tarifa-promo">USD {{ IMP_TARIFA_DOLAR_ADULTO }}</span>
+                                <div>PEN {{ IMP_TARIFA_SOLES_ADULTO }}</div>
+                            </div>
+                            {{ #eventStatus }}
+                            <div class="importe">
+                                <span class="icono-excla icono-excla2" data-resumen="{{ txt_event_overview }}">i</span>
+                            </div>
+                            {{ /eventStatus }}
+                        </div>
+
+                    {{ /PROMOCION_ESTADO }}
+                    {{ ^PROMOCION_ESTADO }}
+                    <div class="cont-tari">
+                        {{ #eventStatus }}
+                        <div class="content-event-sp-first">
+                            <span class="tarifa">USD {{ IMP_TARIFA_DOLAR_ADULTO }}</span>
+                            <span>(PEN {{ IMP_TARIFA_SOLES_ADULTO }})</span>                            
+                        </div>                        
+                        <div class="content-event-sp-second">
+                            <span class="icono-excla icono-excla2" data-resumen="{{ txt_event_overview }}">i</span>                           
+                        </div>
+                        {{ /eventStatus }}
+                        {{ ^eventStatus }}
+                        <span class="tarifa">USD {{ IMP_TARIFA_DOLAR_ADULTO }}</span>
+                        <span>(PEN {{ IMP_TARIFA_SOLES_ADULTO }})</span>  
+                        {{ /eventStatus }}
+                    </div>
+                    {{ /PROMOCION_ESTADO }}
+                    {{ /LISTA_TARIFAS }}
+                {{ /IND_DISPONIBILIDAD }}
+                {{ ^IND_DISPONIBILIDAD }}
+                    <div class="cont-tari">
+                        <span class="tarifa colorNoEventResponsive">{{ txt_not_available }}</span>
+                    </div>
+                {{ /IND_DISPONIBILIDAD }}
+                </div>
+            </div>
+        </div>
+        {{{ htmlPromoDescription }}}
+    </div>
+</script>
+<script id="mobile_grid_for_bimodal_template" type="text/html">
+    <div class="box-tren-movil">
+        <div class="title-tren">
+            {{ #IND_DISPONIBILIDAD }}
+			<div class="radio">
+                {{ #LISTA_TARIFAS }}
+                <input 
+                    type="radio" 
+                    name="radio_{{ IND_TRAMO }}" 
+                    idTren="{{ ID_TREN }}" 
+                    indTramo="{{ IND_TRAMO }}" 
+                    idServicio="{{ ID_SERVICIO }}" 
+                    nomServicio="{{ NOM_TREN }}" 
+                    idTarifa="{{ ID_TARIFA }}" 
+                    fecProgramacion="{{ FEC_PROGRAMACION }}" 
+                    idRuta="{{ ID_RUTA }}" 
+                    idPasajeroTipoAdulto="{{ ID_PASAJERO_TIPO_ADULTO }}" 
+                    idPasajeroTipoNino="{{ ID_PASAJERO_TIPO_NINO }}" 
+                    idPasajeroTipoInfante="{{ ID_PASAJERO_TIPO_INFANTE }}" 
+                    idPasajeroTipoInfanteSinAsiento="{{ ID_PASAJERO_TIPO_INFANTE_SIN_ASIENTO }}" 
+                    impTarifaDolarAdulto="{{ IMP_TARIFA_DOLAR_ADULTO }}" 
+                    impTarifaSolesAdulto="{{ IMP_TARIFA_SOLES_ADULTO }}" 
+                    impTarifaDolarNino="{{ IMP_TARIFA_DOLAR_NINO }}" 
+                    impTarifaSolesNino="{{ IMP_TARIFA_SOLES_NINO }}" 
+                    impTarifaDolarInfante="{{ IMP_TARIFA_DOLAR_INFANTE }}" 
+                    impTarifaSolesInfante="{{ IMP_TARIFA_SOLES_INFANTE }}"
+                {{ /LISTA_TARIFAS }}
+                    impDescripcionRuta="{{ DES_RUTA }}"
+                    numCupo="{{ NUM_CUPO_DISPONIBLE }}" 
+                    numSlot="{{ NUM_SLOT }}"
+                    horSalida ="{{ HOR_SALIDA }}"
+                    horLlegada ="{{ HOR_LLEGADA }}"
+                    tieneUpselling = "{{ TIENE_UPSELLING }}"
+
+                    {{ #IND_TREN_SELECCIONADO }} checked="true" {{ /IND_TREN_SELECCIONADO }}
+                    onchange="addTripToShoppingCartAjax('{{ ID_TREN }}', '{{ ID_RUTA }}', '{{ NUM_SLOT }}');">
+			
+			
+			</div>	
+                {{ /IND_DISPONIBILIDAD }}
+			<h3>{{ DES_SERVICIO }} {{ NUM_SLOT }} </h3>
+            <div class="content-ico">                
+                <span class="icono-excla" onClick="showTrainData(event, '{{ ID_SERVICIO }}')">i</span>
+            </div>
+			{{{ htmlPromoTitle }}}
+            {{{ htmlPromoOffer }}}
+        </div>
+		{{ #indTramoStatus }}
+        <div class="aNomEstacionLlegada">{{ NOM_ESTACION_LLEGADA }}</div>
+        {{ /indTramoStatus }}
+        <div class="detalle-tren">
+            <div class="title-horario-tarifa">
+                <div class="t-horario">{{ txt_schedule }}</div>
+                <div class="t-horario">{{ txt_price }}</div>
+            </div>
+
+			<div class="data-horario">
+                <div class="d-horario">
+                    
+                    <span class="padding-promo">{{ txt_listaCabezeraSalidaBimodal }}: {{ HOR_SALIDA }} HRS.</span>					
+					<span>{{ txt_listaCabezeraTransbordoBimodal }}: {{ BUS_HORA_TRANSBORDO }} HRS.</span>					
+                    
+                    <span>{{ txt_listaCabezeraLlegadaBimodal }}: {{ HOR_LLEGADA }} HRS.</span>
+                </div>
+                <div class="d-tarifa">
+                {{ #IND_DISPONIBILIDAD }}
+                    {{ #LISTA_TARIFAS }}
+                    {{ #PROMOCION_ESTADO }}
+                        <div class="tp-titulos">
+                            <div>{{ txt_tarifaRegular }}</div>
+                            <div>{{ txt_tarifaRegularPromo }}</div>
+                            {{ #eventStatus }}
+                            <div>&nbsp;&nbsp;</div>
+                            {{ /eventStatus }}
+                        </div>
+                        <div class="tp-tarifas">
+                            <div class="importe">
+                                <span class="tarifa-anterior">USD {{ NOM_MONEDA_DOLAR_ANTERIOR }}</span>
+                                <div class="tarifa-anterior">PEN {{ NOM_MONEDA_SOLES_ANTERIOR }}</div>
+                            </div>
+                            <div class="importe">
+                                <span class="tarifa-promo">USD {{ IMP_TARIFA_DOLAR_ADULTO }}</span>
+                                <div>PEN {{ IMP_TARIFA_SOLES_ADULTO }}</div>
+                            </div>
+                            {{ #eventStatus }}
+                            <div class="importe">
+                                <span class="icono-excla icono-excla2" data-resumen="{{ txt_event_overview }}">i</span>
+                            </div>
+                            {{ /eventStatus }}
+                        </div>
+
+                    {{ /PROMOCION_ESTADO }}
+                    {{ ^PROMOCION_ESTADO }}
+                    <div class="cont-tari">
+                        {{ #eventStatus }}
+                        <div class="content-event-sp-first">
+                            <span class="tarifa">USD {{ IMP_TARIFA_DOLAR_ADULTO }}</span>
+                            <span>(PEN {{ IMP_TARIFA_SOLES_ADULTO }})</span>                            
+                        </div>                        
+                        <div class="content-event-sp-second">
+                            <span class="icono-excla icono-excla2" data-resumen="{{ txt_event_overview }}">i</span>                           
+                        </div>
+                        {{ /eventStatus }}
+                        {{ ^eventStatus }}
+                        <span class="tarifa">USD {{ IMP_TARIFA_DOLAR_ADULTO }}</span>
+                        <span>(PEN {{ IMP_TARIFA_SOLES_ADULTO }})</span>  
+                        {{ /eventStatus }}
+                    </div>
+                    {{ /PROMOCION_ESTADO }}
+                    {{ /LISTA_TARIFAS }}
+                {{ /IND_DISPONIBILIDAD }}
+                {{ ^IND_DISPONIBILIDAD }}
+                    <div class="cont-tari">
+                        <span class="tarifa colorNoEventResponsive">{{ txt_not_available }}</span>
+                    </div>
+                {{ /IND_DISPONIBILIDAD }}
+                </div>
+            </div>
+
+        </div>
+		{{{ htmlPromoDescription }}}
+    </div>
+</script><!-- /.GRIDS - Mustache templates -->
+
+
+<!-- UPSELLING - Mustache templates -->
+<script id="upselling_template" type="text/html">
+    <div class="contentent-ticket">
+        <div class="section-titulo">
+            <h3><span>{{ texts.text_upselling_choose }}</span> {{ selectedTrainName }} . <span> {{ texts.text_upselling_change }} </span></h3>
+        </div>
+        <div class="section-trenes">
+            <div class="section-trenes-inner">
+                {{#trips}}
+
+                {{ #IS_VISTADOME }} 
+                {{ > VD_upselling_template }}
+                {{ /IS_VISTADOME }}            
+                {{ ^IS_VISTADOME }}
+                {{ > BH_upselling_template }}
+                {{ /IS_VISTADOME }}
+
+                {{/trips}}
+            </div>
+        </div>
+        {{ > VD_upselling_services_template }}
+        {{ > BH_upselling_services_template }}
+    </div>
+    
+</script>
+<script id="BH_upselling_template" type="text/html">
+    <div class="row row-tren second-tren clearfix">
+        <div class="box-tren">
+            <div class="box-name"><span>{{ texts.text_upselling_travel_on }}</span> {{ DES_SERVICIO }} {{ NUM_SLOT }}</div>
+            <div class="box-precio red"><span>+</span>USD {{ UPSELLING_PRICE_DIFFERENCE }} </div>
+        </div>
+        <div class="box-servicios">
+            <a href="#" class="box-adicionales btn-second">{{ texts.text_upselling_see_services }}</a>
+            <div class="box-cambiar">
+                <a class="btn-tren" href="#" onClick="selectUpselling('{{ ID_TREN }}', '{{ ID_RUTA }}', '{{ NUM_SLOT }}');">{{ texts.text_upselling_btn_change }}</a>
+            </div>
+        </div>
+    </div>
+</script>
+<script id="VD_upselling_template" type="text/html">
+    <div class="row row-tren first-tren clearfix">
+        <div class="box-tren">
+            <div class="box-name"><span>{{ texts.text_upselling_travel_on }}</span> {{ DES_SERVICIO }} {{ NUM_SLOT }}</div>
+            <div class="box-precio"><span>+</span>USD {{ UPSELLING_PRICE_DIFFERENCE }} </div>
+        </div>
+        <div class="box-servicios">
+            <a href="#" class="box-adicionales btn-first">{{ texts.text_upselling_see_services }}</a>
+            <div class="box-cambiar">
+                <a class="btn-tren" href="#" onClick="selectUpselling('{{ ID_TREN }}', '{{ ID_RUTA }}', '{{ NUM_SLOT }}');">{{ texts.text_upselling_btn_change }}</a>
+            </div>
+        </div>
+    </div>
+</script>
+<script id="BH_upselling_one_way_services_template" type="text/html">    
+    <div id="BH_upselling_one_way_services" class="section-adicionales second-row clearfix hidden">
+        <div class="section-adicionales-inner">
+            <div class="title-adicionales">
+                <span>Servicios adicionales</span>
+            </div>
+            <div class="row row-adicional clearfix">
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional obsequio"></div>
+                        <a data-popup-open="BH_popup_one_way_service_1" href="#">{{ texts.text_upselling_belmond_one_way_service_1}}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional bienvenida"></div>
+                        <a data-popup-open="BH_popup_one_way_service_2" href="#">{{ texts.text_upselling_belmond_one_way_service_2 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional adicionales"></div>
+                        <a data-popup-open="BH_popup_one_way_service_3" href="#">{{ texts.text_upselling_belmond_one_way_service_3 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional sala"></div>
+                        <a data-popup-open="BH_popup_one_way_service_4" href="#">{{ texts.text_upselling_belmond_one_way_service_4 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional te"></div>
+                        <a data-popup-open="BH_popup_one_way_service_5" href="#">{{ texts.text_upselling_belmond_one_way_service_5 }}</a>
+                    </div>
+                </div>                
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional asientos"></div>
+                        <a data-popup-open="BH_popup_one_way_service_6" href="#">{{ texts.text_upselling_belmond_one_way_service_6 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional asientos"></div>
+                        <a data-popup-open="BH_popup_one_way_service_7" href="#">{{ texts.text_upselling_belmond_one_way_service_7 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional asientos"></div>
+                        <a data-popup-open="BH_popup_one_way_service_8" href="#">{{ texts.text_upselling_belmond_one_way_service_8 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional asientos"></div>
+                        <a data-popup-open="BH_popup_one_way_service_9" href="#">{{ texts.text_upselling_belmond_one_way_service_9 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional asientos"></div>
+                        <a data-popup-open="BH_popup_one_way_service_10" href="#">{{ texts.text_upselling_belmond_one_way_service_10 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional asientos"></div>
+                        <a data-popup-open="BH_popup_one_way_service_11" href="#">{{ texts.text_upselling_belmond_one_way_service_11 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional asientos"></div>
+                        <a data-popup-open="BH_popup_one_way_service_12" href="#">{{ texts.text_upselling_belmond_one_way_service_12 }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contenido-popup">
+        <div class="popup" data-popup="BH_popup_one_way_service_1">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_one_way_service_1 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_one_way_service_1_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_one_way_service_1" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_one_way_service_2">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_one_way_service_2 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_one_way_service_2_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_one_way_service_2" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_one_way_service_3">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_one_way_service_3 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_one_way_service_3_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_one_way_service_3" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_one_way_service_4">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_one_way_service_4 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_one_way_service_4_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_one_way_service_4" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_one_way_service_5">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_one_way_service_5 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_one_way_service_5_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_one_way_service_5" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_one_way_service_6">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_one_way_service_6 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_one_way_service_6_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_one_way_service_6" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_one_way_service_7">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_one_way_service_7 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_one_way_service_7_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_one_way_service_7" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_one_way_service_8">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_one_way_service_8 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_one_way_service_8_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_one_way_service_8" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_one_way_service_9">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_one_way_service_9 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_one_way_service_9_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_one_way_service_9" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_one_way_service_10">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_one_way_service_10 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_one_way_service_10_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_one_way_service_10" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_one_way_service_11">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_one_way_service_11 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_one_way_service_11_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_one_way_service_11" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_one_way_service_12">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_one_way_service_12 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_one_way_service_12_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_one_way_service_12" href="#">x</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script id="BH_upselling_return_trip_services_template" type="text/html">
+
+    <div id="BH_upselling_return_trip_services" class="section-adicionales second-row clearfix hidden">
+        <div class="section-adicionales-inner">
+            <div class="title-adicionales">
+                <span>Servicios adicionales</span>
+            </div>
+            <div class="row row-adicional clearfix">
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional obsequio"></div>
+                        <a data-popup-open="BH_popup_return_trip_service_1" href="#">{{ texts.text_upselling_belmond_one_way_service_1}}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional bienvenida"></div>
+                        <a data-popup-open="BH_popup_return_trip_service_2" href="#">{{ texts.text_upselling_belmond_one_way_service_2 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional adicionales"></div>
+                        <a data-popup-open="BH_popup_return_trip_service_3" href="#">{{ texts.text_upselling_belmond_one_way_service_3 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional sala"></div>
+                        <a data-popup-open="BH_popup_return_trip_service_4" href="#">{{ texts.text_upselling_belmond_one_way_service_4 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional te"></div>
+                        <a data-popup-open="BH_popup_return_trip_service_5" href="#">{{ texts.text_upselling_belmond_one_way_service_5 }}</a>
+                    </div>
+                </div>                
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional tour"></div>
+                        <a data-popup-open="BH_popup_return_trip_service_6" href="#">{{ texts.text_upselling_belmond_one_way_service_6 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional ventanas"></div>
+                        <a data-popup-open="BH_popup_return_trip_service_7" href="#">{{ texts.text_upselling_belmond_one_way_service_7 }}</a>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="contenido-popup">
+        <div class="popup" data-popup="BH_popup_return_trip_service_1">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_return_trip_service_1 }}</h5>
+                    <div class="contenido-refrigerio">
+                       {{ texts.textarea_upselling_belmond_return_trip_service_1_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_return_trip_service_1" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_return_trip_service_2">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_return_trip_service_2 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_return_trip_service_2_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_return_trip_service_2" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_return_trip_service_3">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_return_trip_service_3 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_return_trip_service_3_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_return_trip_service_3" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_return_trip_service_4">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_return_trip_service_4 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_return_trip_service_4_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_return_trip_service_4" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_return_trip_service_5">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_return_trip_service_5 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_return_trip_service_5_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_return_trip_service_5" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_return_trip_service_6">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_return_trip_service_6 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_return_trip_service_6_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_return_trip_service_6" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="BH_popup_return_trip_service_7">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_belmond_return_trip_service_7 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_belmond_return_trip_service_7_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="BH_popup_return_trip_service_7" href="#">x</a>
+                </div>
+            </div>
+        </div>        
+    </div>
+</script>
+<script id="VD_upselling_one_way_services_template" type="text/html">    
+    <div id="VD_upselling_one_way_services" class="section-adicionales first-row clearfix">
+        <div class="section-adicionales-inner">
+            <div class="title-adicionales">
+                <span>Servicios adicionales</span>
+            </div>
+            <div class="row row-adicional clearfix">
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional obsequio"></div>
+                        <a data-popup-open="VD_popup_one_way_service_1" href="#">{{ texts.text_upselling_vistadome_one_way_service_1 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional bienvenida"></div>
+                        <a data-popup-open="VD_popup_one_way_service_2" href="#">{{ texts.text_upselling_vistadome_one_way_service_2 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional adicionales"></div>
+                        <a data-popup-open="VD_popup_one_way_service_3" href="#">{{ texts.text_upselling_vistadome_one_way_service_3 }}</a>
+                    </div>
+
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional sala"></div>
+                        <a data-popup-open="VD_popup_one_way_service_4" href="#">{{ texts.text_upselling_vistadome_one_way_service_4 }}</a>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </div>
+    <div class="contenido-popup">
+        <div class="popup" data-popup="VD_popup_one_way_service_1">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_vistadome_one_way_service_1 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_vistadome_one_way_service_1_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="VD_popup_one_way_service_1" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="VD_popup_one_way_service_2">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_vistadome_one_way_service_2 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_vistadome_one_way_service_2_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="VD_popup_one_way_service_2" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="VD_popup_one_way_service_3">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_vistadome_one_way_service_3 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_vistadome_one_way_service_3_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="VD_popup_one_way_service_3" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="VD_popup_one_way_service_4">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_vistadome_one_way_service_4 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_vistadome_one_way_service_4_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="VD_popup_one_way_service_4" href="#">x</a>
+                </div>
+            </div>
+        </div>        
+    </div>    
+</script>
+<script id="VD_upselling_return_trip_services_template" type="text/html">    
+    <div id="VD_upselling_return_trip_services" class="section-adicionales first-row clearfix">
+        <div class="section-adicionales-inner">
+            <div class="title-adicionales">
+                <span>Servicios adicionales</span>
+            </div>
+            <div class="row row-adicional clearfix">
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional snack"></div>
+                        <a data-popup-open="VD_popup_return_trip_service_1" href="#">{{ texts.text_upselling_vistadome_return_trip_service_1 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional abordo"></div>
+                        <a data-popup-open="VD_popup_return_trip_service_2" href="#">{{ texts.text_upselling_vistadome_return_trip_service_2 }}</a>
+                    </div>
+                </div>
+                <div class="box-adicional">
+                    <div class="box-adicional-inner">
+                        <div class="icono-adicional persona"></div>
+                        <a data-popup-open="VD_popup_return_trip_service_3" href="#">{{ texts.text_upselling_vistadome_return_trip_service_3 }}</a>
+                    </div>
+                </div>                           
+            </div>
+        </div>
+    </div>
+    <div class="contenido-popup">
+        <div class="popup" data-popup="VD_popup_return_trip_service_1">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.textarea_upselling_vistadome_return_trip_service_1 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_vistadome_return_trip_service_1_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="VD_popup_return_trip_service_1" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="VD_popup_return_trip_service_2">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_vistadome_return_trip_service_2 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_vistadome_return_trip_service_2_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="VD_popup_return_trip_service_2" href="#">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup" data-popup="VD_popup_return_trip_service_3">
+            <div class="popup-top">
+                <div class="popup-inner">
+                    <h5>{{ texts.text_upselling_vistadome_return_trip_service_3 }}</h5>
+                    <div class="contenido-refrigerio">
+                        {{ texts.textarea_upselling_vistadome_return_trip_service_3_description }}
+                    </div>
+                    <a class="popup-close" data-popup-close="VD_popup_return_trip_service_3" href="#">x</a>
+                </div>
+            </div>
+        </div>         
+    </div>    
+</script><!-- /.UPSELLING - Mustache templates -->
+
+<script type="text/javascript" src="/ecommerce/www/js/terms.js"></script>
+<script type="text/javascript" src="/ecommerce/www/js/trains.js"></script>
+<script type="text/javascript" src="/ecommerce/www/js/jquery/jquery.validate-1.6.min.js"></script>
+<script type="text/javascript" src="/ecommerce/www/js/jquery/bx-slider.js"></script>
+<script type="text/javascript" src="/ecommerce/www/js/jquery/jquery.scrollbar.min.js"></script>
+<script type="text/javascript" src="/ecommerce/www/js/tren/validator-form-buscar.js"></script>
+<script type="text/javascript" src="/ecommerce/www/js/tag-manager.js?dpo=20220708"></script>
+<script type="text/javascript" src="/ecommerce/www/js/tren/seleccionar.js?dpo=1657256869"></script>
+<script type="text/javascript" src="/ecommerce/www/js/jquery/jquery-ui-1.11.4/jquery-ui.js"></script>    <!-- /.content -->
+</section><script type="text/javascript" id="" src="//rum-static.pingdom.net/pa-5e3d33a011c07000080003b0.js"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","220375522610602");fbq("track","PageView");</script>
+<noscript>
+ <img height="1" width="1" src="https://www.facebook.com/tr?id=220375522610602&amp;ev=PageView
+&amp;noscript=1">
+</noscript>
+<script type="text/javascript" id="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g+"?ref\x3dgtm2";d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","9fyn27ucmh");</script>
+
+<!-- PushDataLayer-->
+<!-- /.PushDataLayer-->
+
+
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"><div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div></div><div class="blockUI" style="display:none"></div><div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.3; cursor: wait; position: fixed;"></div><div class="blockUI blockMsg blockPage" style="z-index: 1011; position: fixed; padding: 0px; margin: 0px; width: 30%; top: 40%; left: 35%; text-align: center; cursor: wait;"><img src="/ecommerce/www/img/loading.gif"></div><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon834126174939"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon512660222350" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=134621220&amp;tm=gtm002&amp;Ver=2&amp;mid=854e7ad6-8873-40b3-a7fe-86b7fd0e0df0&amp;sid=e56d5a00fe7b11ec89b67fd49064e03f&amp;vid=e56db300fe7b11eca23941aa2cbd3975&amp;vids=0&amp;uach=pv%3D10.0.0&amp;pi=918639831&amp;lg=es-419&amp;sw=1600&amp;sh=900&amp;sc=24&amp;nwd=1&amp;tl=PERURAIL%20-%20Machu%20Picchu%20awaits%20for%20you!&amp;p=https%3A%2F%2Fpax3.perurail.com%2Fecommerce%2Fwww%2Ftrains%2Fseleccionar%2F&amp;r=https%3A%2F%2Fpax3.perurail.com%2Fecommerce%2Fwww%2F%3Fidioma%3Den&amp;lt=893&amp;evt=pageLoad&amp;msclkid=N&amp;sv=1&amp;rn=105536"></div><iframe height="0" width="0" style="display: none; visibility: hidden;" src="//8441144.fls.doubleclick.net/activityi;src=8441144;type=remar0;cat=dc-re0;ord=2102040194620;gtm=2wg6t0;auiddc=836727368.1657256862;u1=https%3A%2F%2Fpax3.perurail.com%2Fecommerce%2Fwww%2Ftrains%2Fseleccionar%2F;u2=2022-07-08;u4=2022-07-08;u5=0;u6=Machu%20Picchu%20%3E%20Ollantaytambo;u8=offerdetail;~oref=https%3A%2F%2Fpax3.perurail.com%2Fecommerce%2Fwww%2Ftrains%2Fseleccionar%2F?"></iframe><div id="sb-container"><div id="sb-overlay"></div><div id="sb-wrapper"><div id="sb-title"><div id="sb-title-inner"></div></div><div id="sb-wrapper-inner"><div id="sb-body"><div id="sb-body-inner"></div><div id="sb-loading"><div id="sb-loading-inner"><span>loading</span></div></div></div></div><div id="sb-info"><div id="sb-info-inner"><div id="sb-counter"></div><div id="sb-nav"><a id="sb-nav-close" title="Close" onclick="Shadowbox.close()"></a><a id="sb-nav-next" title="Next" onclick="Shadowbox.next()"></a><a id="sb-nav-play" title="Play" onclick="Shadowbox.play()"></a><a id="sb-nav-pause" title="Pause" onclick="Shadowbox.pause()"></a><a id="sb-nav-previous" title="Previous" onclick="Shadowbox.previous()"></a></div></div></div></div></div><script type="text/javascript" id="">window.localStorage.setItem("fecha_reserva","2022-07-08");window.localStorage.setItem("fecha_viaje","2022-07-08");window.localStorage.setItem("fecha_regreso","2022-07-08");window.localStorage.setItem("dias_diferencia","0");window.localStorage.setItem("ruta","Machu Picchu \x3e Ollantaytambo");window.localStorage.setItem("destino","Ollantaytambo");window.localStorage.setItem("tipo_pasaje","RT");</script></body></html>
